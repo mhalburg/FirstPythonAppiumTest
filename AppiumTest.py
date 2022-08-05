@@ -16,9 +16,10 @@ class AppiumTest(unittest.TestCase):
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub",self.option)
 
     def testFirstAutomationTest(self):
-        if len(self.driver.find_elements("//*[@text='OK']")) > 0: self.driver.find_element( "//*[@text='OK']").click()
-        self.driver.find_element("//*[@text='Username']").send_keys("company")
-        self.driver.find_element("//*[@text='Password']").send_keys("company")
-        self.driver.find_element("//*[@text='Login']").click()
+        print(self.driver.capabilities)
+        #if len(self.driver.find_elements("//*[@text='OK']")) > 0: self.driver.find_element( "//*[@text='OK']").click()
+        #self.driver.find_element("//*[@text='Username']").send_keys("company")
+        #self.driver.find_element("//*[@text='Password']").send_keys("company")
+        #self.driver.find_element("//*[@text='Login']").click()
 
     def tearDown(self): self.driver.quit()
