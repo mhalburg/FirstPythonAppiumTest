@@ -19,7 +19,7 @@ class AppiumTest(unittest.TestCase):
             self.option['appActivity'] = ".LoginActivity"
             self.option['platformName'] = 'Android'
             self.option['deviceName'] = 'emulator-5554'
-            self.driver = webdriver.Remote("http://localhost:4723/wd/hub",self.option)
+            self.driver = webdriver.Remote("http://35.169.17.173:4723/wd/hub",self.option)
 
     def testFirstAutomationTest(self):
         print(self.driver.mobile.DATA_NETWORK)
