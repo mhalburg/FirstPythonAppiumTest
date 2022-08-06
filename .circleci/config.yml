@@ -1,7 +1,8 @@
 #CircleCI configuration file
 
 version: 2.1
-
+orbs:
+  android: circleci/android@2.0
 jobs:
   build:
     docker:
@@ -9,6 +10,7 @@ jobs:
       - image: cimg/android:2022.07
     steps:
       - checkout # check out the code in the project directory
+      - run: npm install -g appium
       - run: pip install Appium-Python-Client
       - run: pip install pytest
       - run: python -m pytest "AppiumTest.py"
