@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       #- image: cimg/python:3.8 # the primary container, where your job's commands are run
-      - image: cimg/android:2022.07
+      - image: cimg/android:api-30
     steps:
       - checkout # check out the code in the project directory
       - run: sudo apt update
