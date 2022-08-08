@@ -13,16 +13,10 @@ jobs:
       - run: sudo apt-get update
       - run: sudo rm /var/cache/apt/archives/lock
       - run: sudo rm /var/lib/dpkg/lock
-      - run: sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-      - run: sudo apt install nodejs
+      - run: sudo pkg install node
       - run: sudo node --version
-      - run: sudo apt install -y npm
+      - run: sudo apt install -g npm@8.11.0
       - run: sudo npm --version
-      - run: sudo npm cache clean -f
-      - run: sudo npm install -g n
-      - run: sudo n stable
-      - run: sudo npm install npm@8.11.0
-      - run: sudo npm audit fix --force
       - run: sudo npm install appium
       - run: sudo apt-get install -y python3.10
       - run: sudo apt install -y python3-pip
