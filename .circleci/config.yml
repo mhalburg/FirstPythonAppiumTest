@@ -20,5 +20,5 @@ jobs:
       - run: sudo apt install python3-pip
       - run: sudo pip install Appium-Python-Client
       - run: sudo pip install pytest
-      - run: appium
+      - run: sudo appium
       - run: python3 -m pytest "AppiumTest.py"
