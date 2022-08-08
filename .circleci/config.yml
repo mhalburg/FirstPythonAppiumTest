@@ -14,7 +14,9 @@ jobs:
       - run: sudo rm /var/lib/dpkg/lock
       #- run: cd /
       - run: sudo apt install nodejs
+      - run: sudo node --version
       - run: sudo apt install npm
+      - run: sudo npm --version
       - run: sudo npm install appium
       - run: sudo apt-get install python3.8
       - run: sudo apt install python3-pip
