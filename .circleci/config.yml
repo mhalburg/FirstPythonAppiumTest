@@ -15,7 +15,7 @@ jobs:
       - run: cd /
       - run: sudo apt install nodejs
       - run: sudo apt install npm
-      - run: npm install -g appium
+      - run: sudo npm install -g appium
       - run: pip install Appium-Python-Client
       - run: pip install pytest
       - run: python -m pytest "AppiumTest.py"
