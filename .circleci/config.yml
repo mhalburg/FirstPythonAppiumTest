@@ -20,8 +20,8 @@ jobs:
       - run: sudo npm install appium
       - run: sudo apt-get install -y python3.10
       - run: sudo apt install -y python3-pip
-      - run: sudo pip install Appium-Python-Client
-      - run: sudo pip install pytest
+      - run: sudo pip3 install Appium-Python-Client
+      - run: sudo pip3 install pytest
       - run: echo $PATH
       - run: appium --address 127.0.0.1 --port 4723
       - run: python3 -m pytest "AppiumTest.py"
