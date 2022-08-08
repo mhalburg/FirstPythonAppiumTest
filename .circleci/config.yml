@@ -18,7 +18,7 @@ jobs:
       - run: sudo node --version
       - run: sudo apt-get -y install npm
       - run: sudo npm --version
-      - run: sodu npm install node@14.20.0
+      - run: sudo npm install node@14.20.0
       - run: sudo node --version
       - run: sudo npm install appium
       - run: sudo apt-get install python3.8
