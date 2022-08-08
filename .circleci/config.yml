@@ -13,7 +13,7 @@ jobs:
       - run: sudo rm /var/cache/apt/archives/lock
       - run: sudo rm /var/lib/dpkg/lock
       #- run: cd /
-      - run: sudo apt-get install -y nodejs
+      - run: sudo apt-get install -y nodejs=v14.20.0
       - run: sudo node --version
       - run: sudo apt-get -y install npm
       - run: sudo npm --version
