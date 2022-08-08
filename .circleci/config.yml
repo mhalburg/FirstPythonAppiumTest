@@ -14,7 +14,8 @@ jobs:
       - run: sudo rm /var/cache/apt/archives/lock
       - run: sudo rm /var/lib/dpkg/lock
       - run: sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-      - run: sudo nvm install -lts
+      - run: sudo nvm ls
+      - run: sudo nvm install 12.0.0
       - run: sudo node --version
       - run: sudo apt-get install -y npm
       - run: sudo npm --version
