@@ -10,7 +10,8 @@ jobs:
       - image: cimg/android:2022.07
     steps:
       - checkout # check out the code in the project directory
-      - run: cd /
+      - run: sudo rm /var/cache/apt/archives/lock
+      - run:  sudo rm /var/lib/dpkg/lock
       - run: apt install nodejs
       - run: apt install npm
       - run: npm install -g appium
