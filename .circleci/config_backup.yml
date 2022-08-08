@@ -10,7 +10,7 @@ jobs:
       - image: cimg/android:2022.07
     steps:
       - checkout # check out the code in the project directory
-      - run: sudo apt update
+      - run: sudo apt-get update
       - run: sudo rm /var/cache/apt/archives/lock
       - run: sudo rm /var/lib/dpkg/lock
       - run: sudo apt-get install -y nodejs
