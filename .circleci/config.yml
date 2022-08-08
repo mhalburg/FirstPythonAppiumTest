@@ -21,6 +21,7 @@ jobs:
       - run: sudo npm cache clean -f
       - run: sudo npm install -g n
       - run: sudo n stable
+      - run: npm install -g npm@8.16.0
       - run: sudo npm install appium
       - run: sudo apt-get install -y python3.10
       - run: sudo apt install -y python3-pip
