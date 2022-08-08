@@ -19,7 +19,7 @@ jobs:
       - run: sudo npm --version
       - run: sudo npm install appium
       - run: sudo apt-get install -y python3.10
-      - run: sudo apt install -y python3.10-pip
+      - run: sudo apt install -y python3-pip
       - run: sudo pip install Appium-Python-Client
       - run: sudo pip install pytest
       - run: echo $PATH
