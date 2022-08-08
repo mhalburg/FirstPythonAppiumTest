@@ -15,7 +15,7 @@ jobs:
       - run: cd /
       - run: sudo apt install nodejs
       - run: sudo apt install npm
-      - run: sudo npm install -g appium
+      - run: npm install -g appium
       - run: sudo apt-get install python3.8
       - run: sudo apt install python3-pip
       - run: sudo pip install Appium-Python-Client
