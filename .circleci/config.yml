@@ -18,6 +18,7 @@ jobs:
       - run: sudo node --version
       - run: sudo apt-get -y install npm
       - run: sudo npm --version
+      - run: sudo chown -R 3434:3434 "/root/.npm"
       - run: sudo npm install node@14.20.0
       - run: sudo node --version
       - run: sudo npm install appium
@@ -25,7 +26,6 @@ jobs:
       - run: sudo apt install python3-pip
       - run: sudo pip install Appium-Python-Client
       - run: sudo pip install pytest
-      - run: sudo npm install wd
       - run: echo $PATH
       - run: appium --address 127.0.0.1 --port 4723
       - run: python3 -m pytest "AppiumTest.py"
