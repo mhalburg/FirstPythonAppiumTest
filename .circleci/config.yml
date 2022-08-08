@@ -20,5 +20,5 @@ jobs:
       - run: sudo apt install python3-pip
       - run: sudo pip install Appium-Python-Client
       - run: sudo pip install pytest
-      - run: sudo appium --address 127.0.0.1 --port 4723
+      - run: appium --address 127.0.0.1 --port 4723
       - run: python3 -m pytest "AppiumTest.py"
