@@ -13,9 +13,9 @@ jobs:
       - run: sudo apt update
       - run: sudo rm /var/cache/apt/archives/lock
       - run: sudo rm /var/lib/dpkg/lock
-      - run: sudo apt-get install -y nodejs
+      - run: sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+      - run: sudo nvm install -lts
       - run: sudo node --version
-      - run: sudo nvm install --lts
       - run: sudo apt-get install -y npm
       - run: sudo npm --version
       - run: sudo npm install appium
