@@ -11,7 +11,8 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: sudo rm /var/cache/apt/archives/lock
-      - run:  sudo rm /var/lib/dpkg/lock
+      - run: sudo rm /var/lib/dpkg/lock
+      - run: cd /
       - run: apt install nodejs
       - run: apt install npm
       - run: npm install -g appium
