@@ -10,8 +10,8 @@ jobs:
       - image: cimg/android:2022.07
     steps:
       - checkout # check out the code in the project directory
-      - run: install nodejs
-      - run: install npm
+      - run: apt install nodejs
+      - run: apt install npm
       - run: npm install -g appium
       - run: pip install Appium-Python-Client
       - run: pip install pytest
